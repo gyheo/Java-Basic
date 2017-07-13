@@ -25,7 +25,7 @@ public class CarExercise {
 //		System.out.println(c4.name);
 //		System.out.println(c4.number);
 		
-//		t1.run();
+		t1.run();
 //		t1.bang();
 		
 //		c1.bang();

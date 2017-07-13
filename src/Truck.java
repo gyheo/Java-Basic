@@ -8,4 +8,9 @@ public class Truck extends Car {
 	public void bang(){
 		System.out.println("bang!");
 	}
+	
+	public void run(){
+		super.run();
+		System.out.println("truck is running!");
+	}
 }
