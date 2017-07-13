@@ -6,7 +6,8 @@ public class CarExercise {
 		Car c2 = new Car();
 		Car c3 = new Car("경찰차");
 		Car c4 = new Car("구급차", 4444);
-
+		Truck t1 = new Truck();
+		
 		c1.name = "승용차";
 		c1.number = 1111;
 		
@@ -24,5 +25,9 @@ public class CarExercise {
 		System.out.println(c4.name);
 		System.out.println(c4.number);
 		
+		t1.run();
+		t1.bang();
+		
+//		c1.bang();
 	}
 }
