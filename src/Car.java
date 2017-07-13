@@ -6,7 +6,7 @@ public class Car {
 	
 	// Constructor Overloading
 	public Car(){
-		
+		System.out.println("Car Constructor");
 	}
 	
 	public Car(String name){

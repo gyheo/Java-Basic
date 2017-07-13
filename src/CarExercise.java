@@ -14,19 +14,19 @@ public class CarExercise {
 		c2.name = "버스";
 		c2.number = 2222;
 		
-		System.out.println(c1.name);
-		System.out.println(c1.number);
-	
-		System.out.println(c2.name);
-		System.out.println(c2.number);
+//		System.out.println(c1.name);
+//		System.out.println(c1.number);
+//	
+//		System.out.println(c2.name);
+//		System.out.println(c2.number);
+//		
+//		System.out.println(c3.name);
+//
+//		System.out.println(c4.name);
+//		System.out.println(c4.number);
 		
-		System.out.println(c3.name);
-
-		System.out.println(c4.name);
-		System.out.println(c4.number);
-		
-		t1.run();
-		t1.bang();
+//		t1.run();
+//		t1.bang();
 		
 //		c1.bang();
 	}
