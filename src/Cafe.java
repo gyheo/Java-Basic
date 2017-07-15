@@ -3,6 +3,15 @@ import java.util.Scanner;
 public class Cafe {
 	int number;
 	int menu;
+	final int americano = 3000;
+	static int americanoCount = 0;
+	
+	final int cafelatte = 4000;
+	static int cafelatteCount = 0;
+	
+	final int icechoco = 5000;
+	static int icechocoCount = 0;
+	
 	Scanner inputMenu = new Scanner(System.in);
 	Scanner inputNumber = new Scanner(System.in);
 
@@ -29,13 +38,18 @@ public class Cafe {
 		int totalPrice = 0;
 		switch(menu){
 		case 1:
-			totalPrice = 3000 * number;
+			americanoCount++;
+			totalPrice = americano * number;
 			break;
+			
 		case 2:
-			totalPrice = 4000 * number;
+			cafelatteCount++;
+			totalPrice = cafelatte * number;
 			break;
+			
 		case 3:
-			totalPrice = 5000 * number;
+			icechocoCount++;
+			totalPrice = icechoco * number;
 			break;
 		}
 		System.out.print("총 가격은 " + totalPrice + "입니다.");
