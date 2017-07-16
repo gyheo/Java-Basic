@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class Cafe {
 	int number;
 	int menu;
+	String another;
+	
+	static int customerNum = 0;
+	
 	final int americano = 3000;
 	static int americanoCount = 0;
 	
@@ -14,6 +18,7 @@ public class Cafe {
 	
 	Scanner inputMenu = new Scanner(System.in);
 	Scanner inputNumber = new Scanner(System.in);
+	Scanner inputAnother = new Scanner(System.in);
 
 	public void welcomeMenu(){
 		System.out.println("카페에 오신 것을 환영합니다!");
@@ -31,7 +36,8 @@ public class Cafe {
 	public void chooseNumber(){
 		System.out.print("수량을 입력해주세요 : ");
 		this.number = inputNumber.nextInt();
-//		return inputNumber.nextInt();
+		
+		
 	}
 	
 	public int totalPrice(){
@@ -51,7 +57,15 @@ public class Cafe {
 			icechocoCount++;
 			totalPrice = icechoco * number;
 			break;
+			
+		// Root
+		case -1:
+			System.out.println("총 판매량");
+			System.out.println("아메리카노 : " + americanoCount);
+			System.out.println("카페라떼 : " + cafelatteCount);
+			System.out.println("아이스초코 : " + icechocoCount);
 		}
+		
 		System.out.print("총 가격은 " + totalPrice + "입니다.");
 		return totalPrice;
 	}
