@@ -11,25 +11,29 @@ public class MonthTest {
 		// TODO Auto-generated method stub
 		// static final int TOTAL = 12;
 
-		int index = 0, i = 0, repeat = 0;
+		int month = 0, i = 0, repeat = 0;
 		MonthTest mt = new MonthTest();
+		String PROMPT = "cal> ";
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("반복 횟수를 입력하세요 : ");
-		repeat = sc.nextInt();
-		while (i < repeat) {
-			System.out.print("원하시는 달을 입력해주세요 : ");
-			index = sc.nextInt();
-			if (index < 0 || index > 12) {
+		while (true) {
+			System.out.println("원하시는 달을 입력해주세요 : ");
+			System.out.print(PROMPT);
+			month = sc.nextInt();
+			if (month == -1) {
+				System.out.println("Have a nice day!");
+				break;
+			}
+			
+			if (month <= 0 || month > 12) {
 				System.out.print("다시 입력해주세요 : ");
 				continue;
 			}
 
-			System.out.println(mt.getDaysOfMonth(index));
-			i++;
+			System.out.println(month + "월은 " + mt.getDaysOfMonth(month) + "일까지 있습니다.");
+
 		}
-		
-		System.out.println("FINISH!");
+
 	}
 
 }
